@@ -102,7 +102,7 @@ def dynamic_data_entry(input_dictionary,dictionary_name):
     
     
     
-    sql_input = "INSERT INTO %s ( %s ) VALUES ( %s ) ;" % (dictionary_name,columns_keys,columns_values)
+#    sql_input = "INSERT INTO %s ( %s ) VALUES ( %s ) ;" % (dictionary_name,columns_keys,columns_values)
     c.execute(sql_input)
     c.commit()
     return sql_input
